@@ -1,0 +1,159 @@
+
+@media screen and (max-width: 1100px) {
+  .main-container{
+    max-width: 800px;
+  }
+
+  .header-container{
+    grid-template-columns: 1fr 2fr 1fr;
+  
+  }
+  .img-latest{
+    width: 170px;
+  }
+  .baner-h1{
+    font-size: 25px;
+    width: 200px;
+  }
+  .a-latest{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .head-nav,
+  .head-social{
+   display: none;
+   }
+
+  .menu-bar-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 22px;
+    padding-left: 10px;
+  }
+  .header-container{
+    padding: 30px 20px;
+    grid-template-columns: 1fr 11fr; /*размер сетки-*/
+
+  }
+  .img-latest{
+    width: 140px;
+  }
+  .baner-h1{
+    font-size: 18px;
+    width: 180px;
+  }
+  .a-latest{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+.bl-des{
+    height: 100px;
+    width: 90px;
+    font-size: 20px;
+  }
+  .blog-des-cont{
+    margin-top: 70px;
+    font-size: 14px;
+  }
+  .blog-img-des{
+    bottom: -45px;
+  }
+  .insta{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .header-container{
+    grid-template-columns: 1fr 5fr;
+    padding: 10px 32px;
+  }
+  .baner{
+    grid-template-columns: 1fr;
+  }
+  .baner-right{
+    padding-left: 0;
+    grid-template-areas: "header"
+    "latest"
+    "insta";
+    grid-gap: 8px 0;
+  }
+  .baner-h1{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .img-latest{
+    width: 100%;
+  }
+  .a-latest{
+    font-size: 25px;
+    bottom: 20px;
+    left: 20px;
+  }
+  .sub-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-btn{
+    margin-top: 20px;
+    width: 40%;
+    padding: 10px 5px;
+    letter-spacing: normal;
+    font-size: 13px;
+  }
+  .sub-h2{
+    font-size: 26px;
+  }
+  .sub{
+    height: 40px;
+    padding: 5px;
+  }
+  .sub-mail{
+    width: 200px;
+  }
+  .blog{
+    grid-template-columns: 1fr;
+  }
+  .bl-des{
+    height: 150px;
+    width: 140px;
+    font-size: 26px;
+  }
+  .blog-des-cont{
+    margin-top: 70px;
+    font-size: 18px;
+  }
+  .blog-img-des{
+    bottom: -70px;
+  }
+  .insta-desc{
+    font-size: 22px;
+    padding: 8px;
+  }
+  .insta-item{
+    padding: 16px;
+  }
+  .intro{
+    padding: 32px;
+    grid-template-columns: 1fr;
+  }
+}

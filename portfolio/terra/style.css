@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,img,ol,ul,li,label,article,main,header,footer,nav { margin:0; padding:0; border:0; outline:0;}
+
+ul,li { list-style:none; }
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family:  arial, sans-serif, verdana,'Roboto';
+    
+  }
+
+body {
+    color: #fff;
+    background-color: #fff;
+    font-size: 1.0em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 { font-size: 1.5em;
+}
+
+h4 { font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /*min-height: 100%;*/
+   /* padding: 10px;*/
+}
+
+article {
+    background-color: #fff;
+    flex: 5 5;
+    color: #000000;
+    padding: 2em;
+}
+
+nav {
+    /*background-color: rgb(240, 240, 240);*/
+    color: #2006b4;
+    font-size: 1.0em;
+    flex: 1;
+    padding: 1em;
+}
+ 
+header, footer {
+    display: flex;
+    background-color: #fff;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
+main p {
+  padding: 0.5em 0em 0em 0em;
+  line-height: 1.7em;
+  /*text-indent: 30px;*/
+}
+
+main ul {
+  padding: 0.5em 0em 0em 2em;
+  line-height: 1.6em;
+  list-style-type: disc;
+  /*list-style-image: url("images/banana.svg");*/
+}
+
+main li {
+  /*list-style-type: "-";*/
+  list-style-type: disc;
+  padding: 0em 0em 0em 0.5em;
+}
+
+main li ul li {
+  font-size: 0.9em;
+  list-style-type: "-";
+  /*list-style-type: disc;*/
+  padding: 0em 0em 0.5em 0.5em;
+}
+
+/*main li a:hover,a:active, a:visited,a:link {
+  color: blue;
+}*/
+
+main li a {
+  color: blue;
+  text-decoration: none;
+}
+
+main li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+main p a {
+  color: blue;
+  text-decoration: none;
+}
+
+main p a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+footer p a {
+  color: blue;
+  text-decoration: none;
+}
+
+.ul-defis {
+  list-style-type: "-";
+  padding: 0em 0em 0em 0.5em;
+}
+
+table {
+  font-size: 0.9em;
+
+}
+
+table th {
+  background-color: rgb(230, 230, 230);
+  border-bottom-style: solid;
+  border-color: rgb(190, 190, 190);
+  border-width: 1px;
+  padding: 5px;
+
+}
+
+table td {
+  border-bottom-style: dotted;
+  border-color: rgb(190, 190, 190);
+  border-width: 1px;
+  padding: 5px;
+}
+
+/*- картинка хедера*/
+.img_wrap {
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+.bg {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* padding: 0em;
+    margin: 0em;*/
+}
+  
+.vert {
+    background-image: url(images/bg-header-5.jpg);
+    opacity: 1;
+    height: 300px;
+}
+
+/*-картинка футера*/
+.img_foot {
+  width: 100vw;
+  height: 30vh;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.bg-foot {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  margin: 0em;
+}
+
+.vert-foot {
+  background-image: url(images/bg-footer-5.jpg);
+  opacity: 1;
+  height: 240px;
+}
+
+/*-надписи хедера*/
+.head_zagolovok {
+    
+    /*background: 0 0 rgb(253, 251, 251, 0);*/
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+   /*right: 1;*/
+    left: 40px;
+    bottom: 30px;
+    font-size: 1.7em;
+ /*   padding: 5px 40px;*/
+    text-shadow: 5px 5px 5px black;
+} 
+
+.head_contact {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: #fff;
+  border-radius: 2px;
+  position: absolute;
+ /*right: 1;*/
+  left: 40px;
+  bottom: 90px;
+  font-size: 1.4em;
+  /* margin: 10px;*/
+  text-shadow: 5px 5px 5px black;
+} 
+
+/*-надписи футера*/
+.foot_adres {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: #000;
+  position: relative;
+  text-align: center;
+  top: 20px;
+  font-size: 1.0 em;
+  text-shadow: 5px 5px 5px #fff;
+} 
+
+.foot_contact {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: #000;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-size: 1.0em;
+  text-shadow: 1px 1px 5px #fff;
+} 
+
+.foot_email {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: #000;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  padding: 5px;
+  font-size: 1.0em;
+  text-shadow: 1px 1px 5px #fff;
+} 
+
+.foot_copy {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  /*right: 0px;*/
+  padding: 5px;
+  font-size: 1.0em;
+  text-shadow: 5px 5px 5px #000;
+} 
+
+.foot_prom {
+  /*background: 0 0 rgb(253, 251, 251, 0);*/
+  color: rgb(158, 157, 157);
+  position: relative;
+  text-align: center;
+  top: 50px;
+  right: 10px;
+  padding: 10px;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 1px #000;
+} 
+
+/*-иконки телефонов, почти и т.д.*/
+.logo {
+    position:absolute;
+    width: 300px;
+    height: 100px;
+    top: 15px;
+    left:20px;
+}
+
+.cozseti {
+  position:relative;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left:5px;
+}
+.foot_icon {
+   position:relative;
+   width: 20px;
+   height: 20px;
+   top: 5px;
+ }
+
+ .p-icon {
+  position:relative;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+}
+
+/* Fixed sidenav, full height - класс для навигационного меню */
+.sidenav {
+    height: 100%;
+    width:  350px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   /*background-color: #fff;*/
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #4e4e4e;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    text-shadow: 2px 2px 7px rgb(133, 130, 130);
+    /*box-shadow: 0px 0px 0px 0px rgba(155,155,155,1);
+    background-color:linear-gradient(90deg, #E3535D, #2AA5A0);
+    -webkit-background-clip: color;
+    -webkit-text-fill-color: transparent;
+    background-color:linear-gradient(90deg, #E3535D, #2AA5A0);
+    background: radial-gradient(#2AA5A0 1px, transparent 2px);
+    background-size: 3px 3px;
+    -webkit-background-clip: color;
+    -webkit-text-fill-color: transparent;*/
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #1222fc;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    /*background-color: #fff;*/
+    color: black;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    font-size: 0.7em;
+    /*background-color: #fff;*/
+    padding-left: 15px;
+    text-shadow: 2px 2px 7px rgb(133, 130, 130);
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .fa-caret-up {
+    float: right;
+    padding-right: 8px;
+  }

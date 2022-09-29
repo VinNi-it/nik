@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 768px) {
+     
+    body{
+        min-height: 100vh;
+    }
+    main {
+        flex-direction: column;
+        /*min-height: 100%;*/
+        flex: 1 1 auto;
+    }
+    .vert {
+        background-image: url(images/bg-header.jpg);
+        opacity: 1;
+        height: 250px;
+    }
+    .head_contact {
+    
+        color: #fff;
+        position: absolute;
+        left: 40px;
+        bottom: 70px;
+        font-size: 1.2em;
+        text-shadow: 5px 5px 5px black;
+      } 
+}

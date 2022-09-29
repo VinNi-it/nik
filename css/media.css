@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+  #navbarsBurger ul li{
+    padding-left: 0px;
+    }
+
+    .icon-lang{
+      /*padding-left: 5px;*/
+      margin: 0px 5px 10px 5px;
+    }
+    
+    .carousel-inner .carousel-item > div {
+      display: none;
+     }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+      margin: 0 auto;
+     }
+
+
+}
