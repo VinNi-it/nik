@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded',function () {
 		if(error === 0){
 			form.classList.add('_sending');//класс за анимацию загрузки добавляется
 			//при помощи технологии ajax и fetch
-			let response = await fetch('sendmail.php',{
+			let response = await fetch('sendmail2.php',{
 				method: 'POST',
 				body: formData
 			});
 
 			if (response.ok) {
-				let result = await response.json();
-//				let result = await response;// sendmail2.php
-				alert(result.message);
-//				alert('сообщение отправлено');// sendmail2.php
+//				let result = await response.json();
+				let result = await response;// sendmail2.php
+//				alert(result.message);
+				alert('сообщение отправлено');// sendmail2.php
 				form.reset();
 				form.classList.remove('_sending');//класс за анимацию загрузки удаляется
 			} else {
